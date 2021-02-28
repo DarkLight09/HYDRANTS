@@ -15,12 +15,12 @@
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
 	    
-        <a-image
+        <a-entity
 	src="assets/tirano/scene.gltf"
 	look-at="[gps-camera]"
 	scale="1 1 1"
 	gps-entity-place="latitude: 36.641361; longitude: -6.353111;"
-        ></a-image>
+        >
 	    
 	<a-camera gps-camera rotation-reader></a-camera>
 	</a-scene>
