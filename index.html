@@ -13,7 +13,7 @@
     <a-scene
             embedded
             loading-screen="enabled: false;"
-            arjs="sourceType: webcam; debugUIEnabled: false;">
+	    embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
 	    
                 <a-image
                     src="assets/arrow.gif"
@@ -29,7 +29,6 @@
                     gps-entity-place="latitude: 36.641130; longitude: -6.353179;"
                 ></a-image>
 	    
-	    <a-scene gps-camera-debug embedded arjs='sourceType: webcam; debugUIEnabled: false;'></a-scene>
 	<a-camera gps-camera rotation-reader></a-camera>
    </a-scene>
   </body>
