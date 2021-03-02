@@ -31,11 +31,12 @@
                 ></a-image>
 	    
 	          <a-marker>
-        <!-- Adding an OBJ file to an AR Project-->
-        <a-entity 
-		gltf-model=”url(/path/to/nameOfFile.gltf)”>
-        </a-entity>
-              
+		<a-scene>
+ 		 <a-assets>
+  		  <a-asset-item id="scene" src="/assets/tirano/scene.bin"></a-asset-item>
+  		</a-assets>
+ 		 <a-entity gltf-model="#scene"></a-entity>
+		</a-scene>
       </a-marker>
   <a-entity camera>
   </a-entity>
