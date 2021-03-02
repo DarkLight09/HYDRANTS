@@ -30,6 +30,16 @@
                     gps-entity-place="latitude: 36.641130; longitude: -6.353179;"
                 ></a-image>
 	    
+	          <a-marker>
+        <!-- Adding an OBJ file to an AR Project-->
+        <a-entity 
+		gltf-model=”url(/path/to/nameOfFile.gltf)”>
+        </a-entity>
+              
+      </a-marker>
+  <a-entity camera>
+  </a-entity>
+	    
 	<a-camera gps-camera rotation-reader></a-camera>
    </a-scene>
   </body>
