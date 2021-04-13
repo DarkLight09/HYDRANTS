@@ -18,7 +18,8 @@
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
 
-	<a-sphere material="color: white" gps-entity-place="latitude: 36.621905; longitude: -6.356168;">
+	<a-sphere material="color: red" animation="property: object3D.position.y; to: 3; dir: alternate; dur: 2000; loop: true"
+		  gps-entity-place="latitude: 36.621905; longitude: -6.356168;">
 	  </a-sphere>
 	<a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" gps-entity-place="latitude: 36.640838; longitude: -6.353492;">
 	  </a-cylinder>
