@@ -19,15 +19,15 @@
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
 
 	<a-sphere material="color: red" animation="property: object3D.position.y; to: 3; dir: alternate; dur: 2000; loop: true"
-		  gps-entity-place="latitude: 36.621905; longitude: -6.356168;">
+	  gps-entity-place="latitude: 36.621905; longitude: -6.356168;">
 	  </a-sphere>
-	<a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" gps-entity-place="latitude: 36.640838; longitude: -6.353492;">
+	<a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"
+	  gps-entity-place="latitude: 36.621982; longitude: -6.356091;">
 	  </a-cylinder>
-	<a-text value="Pr🠗ueba.↓." look-at="[gps-camera]" scale="10 10 10"
-            gps-entity-place="latitude: 36.622110; longitude: -6.356281;"></a-text>
-	<a-entity gltf-model="/assets/tirano/scene.gltf" rotation="0 180 0" animation-mixer scale="1 1 1"
-	    gps-entity-place="latitude: 36.62220259722396; longitude: -6.3559440708668316;">
-	</a-entity>
+	  <a-sphere material="color: black" animation="property: object3D.position.y; to: 3; dir: alternate; dur: 1000; loop: true"
+	  gps-entity-place="latitude: 36.622110; longitude: -6.356281;">
+	  </a-sphere>
+
         <a-camera gps-camera rotation-reader></a-camera>
 	</a-scene>
 </body>
